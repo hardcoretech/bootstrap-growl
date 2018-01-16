@@ -29,7 +29,7 @@
     css = {
       "position": (options.ele === "body" ? "fixed" : "absolute"),
       "margin": 0,
-      "z-index": "9999",
+      "z-index": options.zIndex,
       "display": "none"
     };
     css[options.offset.from] = offsetAmount + "px";
@@ -71,7 +71,8 @@
     width: 250,
     delay: 4000,
     allow_dismiss: true,
-    stackup_spacing: 10
+    stackup_spacing: 10,
+    zIndex: 9999
   };
 
 }).call(this);
